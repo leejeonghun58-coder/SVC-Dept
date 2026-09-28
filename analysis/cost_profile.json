@@ -1,0 +1,1117 @@
+{
+  "generated_at": "2026-09-17T10:30:03",
+  "workbooks": [
+    {
+      "file_name": "Cost(23.04~24.03).xlsx",
+      "source_path": "C:\\Users\\fujifilm\\Desktop\\Cost(23.04~24.03)\\Cost(23.04~24.03).xlsx",
+      "size_bytes": 73567636,
+      "modified_local": "2026-09-17T09:59:20",
+      "sha256": "6B419EEFA63B80A3190A0DF4E512B26E71646A0A2E6D5EB3B40B656BCD522DF2",
+      "sheets": [
+        {
+          "name": "List",
+          "state": "visible",
+          "reported_dimension": "A1:AU285541",
+          "header_row": 1,
+          "headers": [
+            "월도",
+            "SR Number",
+            "SR Order Number",
+            "Order Number",
+            "Order Line Status",
+            "SR Date",
+            "SR Type",
+            "SR Created By",
+            "SR Problem Summary",
+            "Item Number1",
+            "IB Serial Number",
+            "&-2",
+            "IB Serial Number_2",
+            "&",
+            "GL Product Level 4",
+            "GL Product Level 6",
+            "PL6 변경",
+            "IB Install Date",
+            "Contract Type",
+            "Contract Coverage Name",
+            "IB CSE",
+            "CSE Group",
+            "New CSE Group",
+            "New CSE Group-1",
+            "New IB CSE",
+            "직판/ 위탁 구분",
+            "Customer No",
+            "Customer Name",
+            "Installation Address Line1",
+            "SR Name-No",
+            "Sub Inventory",
+            "Service Date",
+            "Service Activity",
+            "Line",
+            "Charge Detail Product Category1",
+            "Charge Detail Item Number",
+            "CONS_SUB_CATEGORY",
+            "Charge Detail Item Description",
+            "UOM",
+            "Qty",
+            "Item/Material Cost",
+            "Overide Unit Price",
+            "Extended Price",
+            "No Charge Flag",
+            "Source",
+            "IB Last EP Status",
+            "Total Cost"
+          ],
+          "data_rows_nonblank": 285540,
+          "blank_rows_after_header": 0,
+          "column_count": 47,
+          "formula_cells": 0,
+          "exact_duplicate_rows": 0,
+          "exact_duplicate_rate": 0.0,
+          "columns": [
+            {
+              "column": "월도",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 12,
+              "samples_masked": [
+                "2****월",
+                "2*****월"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Number",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "1******6",
+                "1******8",
+                "1******0",
+                "1******2",
+                "1******4"
+              ],
+              "numeric_text": 285540,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Order Number",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "5******4",
+                "5******5",
+                "5******6",
+                "5******7",
+                "5******8"
+              ],
+              "numeric_text": 285540,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Order Number",
+              "nonempty": 238308,
+              "blank": 47232,
+              "blank_rate": 0.165413,
+              "types": {
+                "text": 238308
+              },
+              "unique_count": 5460,
+              "samples_masked": [
+                "*",
+                "5******0",
+                "5******1",
+                "5******3",
+                "5******6"
+              ],
+              "numeric_text": 238308,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Order Line Status",
+              "nonempty": 238308,
+              "blank": 47232,
+              "blank_rate": 0.165413,
+              "types": {
+                "text": 238308
+              },
+              "unique_count": 6,
+              "samples_masked": [
+                "C****D",
+                "C******D",
+                "A******G",
+                "B****D",
+                "A******N"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Date",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "datetime": 285540
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "2023-04-01T03:42:07.999000",
+                "2023-04-01T03:58:06",
+                "2023-04-01T03:58:09",
+                "2023-04-01T03:58:11.999000",
+                "2023-04-01T03:58:13"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Type",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 20,
+              "samples_masked": [
+                "4******K",
+                "0******K",
+                "2******K",
+                "1******K",
+                "5******K"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Created By",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 69,
+              "samples_masked": [
+                "K******E",
+                "C*****P",
+                "K******A",
+                "K******G",
+                "K******N"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Problem Summary",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "E******5",
+                "E******1",
+                "E******9",
+                "E******2",
+                "E******8"
+              ],
+              "numeric_text": 7,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Item Number1",
+              "nonempty": 284962,
+              "blank": 578,
+              "blank_rate": 0.002024,
+              "types": {
+                "text": 284962
+              },
+              "unique_count": 588,
+              "samples_masked": [
+                "C******W",
+                "B******W",
+                "M******W",
+                "V******W",
+                "D******W"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "IB Serial Number",
+              "nonempty": 284962,
+              "blank": 578,
+              "blank_rate": 0.002024,
+              "types": {
+                "text": 284962
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "1****5",
+                "1****2",
+                "2****6",
+                "3****2",
+                "5****5"
+              ],
+              "numeric_text": 280759,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "&-2",
+              "nonempty": 284962,
+              "blank": 578,
+              "blank_rate": 0.002024,
+              "types": {
+                "text": 284962
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "C******5",
+                "B******2",
+                "B******6",
+                "M******2",
+                "M******4"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "IB Serial Number_2",
+              "nonempty": 285054,
+              "blank": 486,
+              "blank_rate": 0.001702,
+              "types": {
+                "text": 262901,
+                "int": 22153
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "1****5",
+                "1****2",
+                "2****6",
+                "3****2",
+                "5****5"
+              ],
+              "numeric_text": 258698,
+              "zero_count": 92,
+              "negative_count": 0
+            },
+            {
+              "column": "&",
+              "nonempty": 285054,
+              "blank": 486,
+              "blank_rate": 0.001702,
+              "types": {
+                "text": 285054
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "C******5",
+                "B******2",
+                "B******6",
+                "M******2",
+                "M******4"
+              ],
+              "numeric_text": 92,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "GL Product Level 4",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 10,
+              "samples_masked": [
+                "G******R",
+                "G******O",
+                "A*****O",
+                "A******R",
+                "A****P"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "GL Product Level 6",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 152,
+              "samples_masked": [
+                "W******W",
+                "S******D",
+                "M******W",
+                "I******W",
+                "P**N"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "PL6 변경",
+              "nonempty": 261220,
+              "blank": 24320,
+              "blank_rate": 0.085172,
+              "types": {
+                "text": 261220
+              },
+              "unique_count": 54,
+              "samples_masked": [
+                "W****L",
+                "S******D",
+                "M**T",
+                "I****A",
+                "P**N"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "IB Install Date",
+              "nonempty": 284959,
+              "blank": 581,
+              "blank_rate": 0.002035,
+              "types": {
+                "float": 284729,
+                "int": 230
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "43775.11424768",
+                "43550.50692129",
+                "43552.80168981",
+                "42049.34123842",
+                "43518.66193287"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Contract Type",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 13,
+              "samples_masked": [
+                "F***3",
+                "K****A",
+                "R*A",
+                "T*M",
+                "P******K"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Contract Coverage Name",
+              "nonempty": 282614,
+              "blank": 2926,
+              "blank_rate": 0.010247,
+              "types": {
+                "text": 282614
+              },
+              "unique_count": 9,
+              "samples_masked": [
+                "F****3",
+                "F****2",
+                "F****4",
+                "F****1",
+                "K******M"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "IB CSE",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 75,
+              "samples_masked": [
+                "홍******3",
+                "김******7",
+                "김******9",
+                "김******4",
+                "김******3"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "CSE Group",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 18,
+              "samples_masked": [
+                "T******팀",
+                "T******부",
+                "U******Y",
+                "T******타"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "New CSE Group",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 18,
+              "samples_masked": [
+                "T******팀",
+                "T******부",
+                "U******Y",
+                "T******타"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "New CSE Group-1",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 18,
+              "samples_masked": [
+                "T******팀",
+                "T******부",
+                "U******Y",
+                "T******타"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "New IB CSE",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 75,
+              "samples_masked": [
+                "홍******3",
+                "김******7",
+                "김******9",
+                "김******4",
+                "김******3"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "직판/ 위탁 구분",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 2,
+              "samples_masked": [
+                "**"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Customer No",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 4484,
+              "samples_masked": [
+                "K******5",
+                "K******1",
+                "K******9",
+                "K******2",
+                "K******8"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Customer Name",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 4420,
+              "samples_masked": [
+                "투*****니",
+                "(******구",
+                "케*****어",
+                "풀****템",
+                "영***사"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Installation Address Line1",
+              "nonempty": 285533,
+              "blank": 7,
+              "blank_rate": 2.5e-05,
+              "types": {
+                "text": 285533
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "투*****니",
+                "베***구",
+                "케*****어",
+                "풀****템",
+                "영******)"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "SR Name-No",
+              "nonempty": 200652,
+              "blank": 84888,
+              "blank_rate": 0.297289,
+              "types": {
+                "text": 200652
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "고******4",
+                "이******0",
+                "E******6",
+                "E******1",
+                "*"
+              ],
+              "numeric_text": 19,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Sub Inventory",
+              "nonempty": 47159,
+              "blank": 238381,
+              "blank_rate": 0.834843,
+              "types": {
+                "text": 47159
+              },
+              "unique_count": 149,
+              "samples_masked": [
+                "C******1",
+                "8******5",
+                "C******0",
+                "C******6",
+                "C*****P"
+              ],
+              "numeric_text": 4006,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Service Date",
+              "nonempty": 276502,
+              "blank": 9038,
+              "blank_rate": 0.031652,
+              "types": {
+                "int": 229299,
+                "float": 47203
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "2958101",
+                "45028.63918981",
+                "45021.59930555",
+                "45028.38877314",
+                "45019.57291666"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Service Activity",
+              "nonempty": 56270,
+              "blank": 229270,
+              "blank_rate": 0.802935,
+              "types": {
+                "text": 56270
+              },
+              "unique_count": 8,
+              "samples_masked": [
+                "N******e",
+                "N******l",
+                "P******e",
+                "N******r",
+                "P******r"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Line",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "int": 285540
+              },
+              "unique_count": 39,
+              "samples_masked": [
+                "0",
+                "2",
+                "1",
+                "4",
+                "6"
+              ],
+              "numeric_text": 0,
+              "zero_count": 229270,
+              "negative_count": 0
+            },
+            {
+              "column": "Charge Detail Product Category1",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 6,
+              "samples_masked": [
+                "C******E",
+                "P**T",
+                "P***R",
+                "T**L",
+                "S******E"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Charge Detail Item Number",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 3459,
+              "samples_masked": [
+                "C******A",
+                "C******5",
+                "C******2",
+                "C******4",
+                "C******0"
+              ],
+              "numeric_text": 2,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "CONS_SUB_CATEGORY",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 11,
+              "samples_masked": [
+                "O***R",
+                "T***R",
+                "C****R",
+                "D**M",
+                "#**A"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Charge Detail Item Description",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 3035,
+              "samples_masked": [
+                "A******e",
+                "T******e",
+                "T******G",
+                "T******k",
+                "D******w"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "UOM",
+              "nonempty": 56270,
+              "blank": 229270,
+              "blank_rate": 0.802935,
+              "types": {
+                "text": 56270
+              },
+              "unique_count": 6,
+              "samples_masked": [
+                "**",
+                "B*T",
+                "B*X",
+                "U*t",
+                "P*C"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Qty",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "int": 285540
+              },
+              "unique_count": 51,
+              "samples_masked": [
+                "1",
+                "2",
+                "3",
+                "5",
+                "4"
+              ],
+              "numeric_text": 0,
+              "zero_count": 1722,
+              "negative_count": 1746
+            },
+            {
+              "column": "Item/Material Cost",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "int": 12436,
+                "float": 273104
+              },
+              "unique_count": 4514,
+              "samples_masked": [
+                "4440",
+                "41612.93465",
+                "23308.44752",
+                "45976.38812",
+                "44285.0495"
+              ],
+              "numeric_text": 0,
+              "zero_count": 2,
+              "negative_count": 0
+            },
+            {
+              "column": "Overide Unit Price",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "int": 285540
+              },
+              "unique_count": 880,
+              "samples_masked": [
+                "38100",
+                "240000",
+                "250000",
+                "180000",
+                "450000"
+              ],
+              "numeric_text": 0,
+              "zero_count": 21373,
+              "negative_count": 0
+            },
+            {
+              "column": "Extended Price",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "int": 285540
+              },
+              "unique_count": 1720,
+              "samples_masked": [
+                "38100",
+                "240000",
+                "250000",
+                "500000",
+                "750000"
+              ],
+              "numeric_text": 0,
+              "zero_count": 22761,
+              "negative_count": 1745
+            },
+            {
+              "column": "No Charge Flag",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 1,
+              "samples_masked": [
+                "*"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Source",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "text": 285540
+              },
+              "unique_count": 2,
+              "samples_masked": [
+                "A******r",
+                "C******l"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "IB Last EP Status",
+              "nonempty": 172495,
+              "blank": 113045,
+              "blank_rate": 0.395899,
+              "types": {
+                "text": 172495
+              },
+              "unique_count": 5,
+              "samples_masked": [
+                "A****E",
+                "C******D",
+                "P******E",
+                "D****E",
+                "P******L"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "Total Cost",
+              "nonempty": 285540,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "int": 14114,
+                "float": 271426
+              },
+              "unique_count": 8182,
+              "samples_masked": [
+                "4440",
+                "41612.93465",
+                "23308.44752",
+                "45976.38812",
+                "88570.099"
+              ],
+              "numeric_text": 0,
+              "zero_count": 1724,
+              "negative_count": 1746
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "Cost(24.04~25.03).xlsx",
+      "source_path": "C:\\Users\\fujifilm\\Desktop\\Cost(23.04~24.03)\\Cost(24.04~25.03).xlsx",
+      "size_bytes": 38087994,
+      "modified_local": "2026-09-17T10:03:20",
+      "sha256": "DADEE396D3B1945131848A541061AA14F92ADF1E5D84D8081BC5588DC1747993",
+      "sheets": [
+        {
+          "name": "FY24",
+          "state": "visible",
+          "reported_dimension": "A1:D21375",
+          "header_row": 6,
+          "headers": [
+            "행 레이블",
+            "CONSUMABLE",
+            "PART",
+            "총합계"
+          ],
+          "data_rows_nonblank": 21369,
+          "blank_rows_after_header": 0,
+          "column_count": 4,
+          "formula_cells": 0,
+          "exact_duplicate_rows": 0,
+          "exact_duplicate_rate": 0.0,
+          "columns": [
+            {
+              "column": "행 레이블",
+              "nonempty": 21368,
+              "blank": 1,
+              "blank_rate": 4.7e-05,
+              "types": {
+                "text": 21368
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "A******6",
+                "A******2",
+                "A******5",
+                "A******1",
+                "A******3"
+              ],
+              "numeric_text": 0,
+              "zero_count": 0,
+              "negative_count": 0
+            },
+            {
+              "column": "CONSUMABLE",
+              "nonempty": 20597,
+              "blank": 772,
+              "blank_rate": 0.036127,
+              "types": {
+                "float": 20372,
+                "int": 225
+              },
+              "unique_count": 9108,
+              "samples_masked": [
+                "79729935.14303988",
+                "20862.912",
+                "20163.89691",
+                "140495.92023",
+                "81331.21422"
+              ],
+              "numeric_text": 0,
+              "zero_count": 5,
+              "negative_count": 65
+            },
+            {
+              "column": "PART",
+              "nonempty": 4970,
+              "blank": 16399,
+              "blank_rate": 0.76742,
+              "types": {
+                "float": 4957,
+                "int": 13
+              },
+              "unique_count": 3562,
+              "samples_masked": [
+                "477692.7481500001",
+                "82235.75601",
+                "7199.28889",
+                "110102.8488",
+                "166767.67698"
+              ],
+              "numeric_text": 0,
+              "zero_count": 7,
+              "negative_count": 12
+            },
+            {
+              "column": "총합계",
+              "nonempty": 21369,
+              "blank": 0,
+              "blank_rate": 0.0,
+              "types": {
+                "float": 21159,
+                "int": 210
+              },
+              "unique_count": ">10000",
+              "samples_masked": [
+                "80207627.89118989",
+                "20862.912",
+                "20163.89691",
+                "140495.92023",
+                "81331.21422"
+              ],
+              "numeric_text": 0,
+              "zero_count": 11,
+              "negative_count": 67
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

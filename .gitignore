@@ -1,0 +1,42 @@
+# Raw and processed business data
+data/
+uploads/
+exports/
+reports/
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.csv
+*.tsv
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Python and local caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# Local Superpowers execution workspace
+.superpowers/
+
+# Generated report files
+*.pdf
