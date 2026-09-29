@@ -18,9 +18,9 @@ export default async function DataManagementPage() {
     <section className="data-management">
       <header className="page-heading">
         <div>
-          <p className="eyebrow">Data management</p>
-          <h1>데이터 관리</h1>
-          <p>출고 또는 DV 원본 XLSX를 검증하고 재개 가능한 방식으로 업로드합니다.</p>
+          <p className="eyebrow">Data upload</p>
+          <h1>데이터 업로드</h1>
+          <p>출고 또는 DV 원본 XLSX를 안전하게 등록합니다. 등록된 원본은 검증과 분석 단계에 사용됩니다.</p>
         </div>
       </header>
       <UploadPanel initialJobs={data} />

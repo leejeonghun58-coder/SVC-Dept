@@ -5,11 +5,10 @@ import type { AppMember } from "@/lib/auth/require-member";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 const navigation = [
-  { href: "/dashboard", label: "출고 대시보드" },
-  { href: "/items", label: "품목 분석" },
-  { href: "/customers", label: "고객명·DV 분석" },
-  { href: "/data", label: "데이터 관리" },
-  { href: "/mappings", label: "매핑·품질" },
+  { href: "/dashboard", label: "대시보드" },
+  { href: "/shipments", label: "부·소모품 출고현황" },
+  { href: "/customers", label: "고객별 사용량" },
+  { href: "/data", label: "데이터 업로드" },
 ];
 
 async function signOut() {

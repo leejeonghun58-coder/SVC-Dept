@@ -26,7 +26,7 @@ const localLabels: Record<LocalPhase, string> = {
   hashing: "파일 무결성 확인 중",
   uploading: "Supabase Storage로 직접 업로드 중",
   paused: "업로드 일시정지",
-  processing: "업로드 완료 · 처리 대기",
+  processing: "업로드 완료 · 분석 준비",
   failed: "업로드 실패 · 재시도 가능",
 };
 
@@ -165,7 +165,7 @@ export function UploadPanel({ initialJobs }: { initialJobs: UploadJobRow[] }) {
           <label htmlFor="workbook">XLSX 원본 파일</label>
           <input id="workbook" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onChange={(event) => setFile(event.target.files?.[0] ?? null)} disabled={phase === "hashing" || phase === "uploading"} />
           <p className="selected-file" data-testid="selected-file">{file ? `선택 파일: ${file.name}` : "선택된 파일 없음"}</p>
-          <p className="form-help">최대 200MB · 같은 종류와 내용의 파일은 중복 등록되지 않습니다.</p>
+          <p className="form-help">최대 200MB · 같은 종류와 내용의 파일은 중복 등록되지 않습니다. 업로드된 원본은 검증·분석 단계에 사용됩니다.</p>
           <button type="submit" disabled={phase === "hashing" || phase === "uploading"}>무결성 확인 후 업로드</button>
         </form>
         <div className="upload-progress" aria-live="polite">
