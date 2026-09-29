@@ -10,11 +10,11 @@ import {
   createUploadJob,
 } from "@/domain/uploads/create-upload-job";
 import { uploadKinds } from "@/domain/uploads/upload-types";
+import { AdministratorRequiredError, requireAdministrator } from "@/lib/auth/require-admin";
 import {
   AuthenticationRequiredError,
   InactiveMemberError,
   MembershipRequiredError,
-  requireMember,
 } from "@/lib/auth/require-member";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 
@@ -41,6 +41,9 @@ function errorResponse(error: unknown) {
   if (error instanceof MembershipRequiredError || error instanceof InactiveMemberError) {
     return NextResponse.json({ error: error.message }, { status: 403 });
   }
+  if (error instanceof AdministratorRequiredError) {
+    return NextResponse.json({ error: error.message }, { status: 403 });
+  }
   if (error instanceof InvalidWorkbookError) {
     return NextResponse.json({ error: error.message }, { status: 400 });
   }
@@ -55,7 +58,7 @@ function errorResponse(error: unknown) {
 
 export async function GET() {
   try {
-    await requireMember();
+    await requireAdministrator();
     const supabase = await createServerSupabaseClient();
     const { data, error } = await supabase
       .from("upload_jobs")
@@ -71,7 +74,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const member = await requireMember();
+    const member = await requireAdministrator();
     const parsed = requestSchema.safeParse(await request.json());
     if (!parsed.success) {
       return NextResponse.json(

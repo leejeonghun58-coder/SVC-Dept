@@ -8,7 +8,7 @@ const navigation = [
   { href: "/dashboard", label: "대시보드" },
   { href: "/shipments", label: "부·소모품 출고현황" },
   { href: "/customers", label: "고객별 사용량" },
-  { href: "/data", label: "데이터 업로드" },
+  { href: "/data", label: "데이터 업로드", administratorOnly: true },
 ];
 
 async function signOut() {
@@ -33,7 +33,7 @@ export function AppShell({
           <strong>SVC 고객별 자재출고·DV 분석</strong>
         </div>
         <nav aria-label="주요 메뉴">
-          {navigation.map((item) => (
+          {navigation.filter((item) => !item.administratorOnly || member.role === "admin").map((item) => (
             <Link href={item.href} key={item.href}>{item.label}</Link>
           ))}
         </nav>

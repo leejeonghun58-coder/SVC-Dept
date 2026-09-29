@@ -1,11 +1,11 @@
 import { UploadPanel } from "@/features/data-management/upload-panel";
-import { requireMember } from "@/lib/auth/require-member";
+import { requireAdministrator } from "@/lib/auth/require-admin";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
 
 export default async function DataManagementPage() {
-  await requireMember();
+  await requireAdministrator();
   const supabase = await createServerSupabaseClient();
   const { data, error } = await supabase
     .from("upload_jobs")
