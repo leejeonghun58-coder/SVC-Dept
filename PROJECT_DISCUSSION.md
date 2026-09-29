@@ -1019,3 +1019,14 @@ PDF 구성 사용자 답변: **B — 요약 + 분석형**
 - 안정 완료분은 원격 `main`, 후속 구현분은 `feat/ssda-foundation` 브랜치에 보존한다.
 - 저장소가 공개 상태이므로 실제 고객명, 고객번호, 장비번호, 원본 행과 비밀키는 이후에도 커밋하지 않는다.
 - 연결 전 검증: Vitest 36개, Python 회귀 테스트 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.
+
+### Vercel 최초 배포 오류 복구
+
+- 복구일: 2026-09-29
+- 첫 번째 원인: Vercel Framework Preset이 `Other`로 설정되어 빌드 후 존재하지 않는 `public` 출력 디렉터리를 요구했다.
+- 수정: 프로젝트 Framework Preset을 `Next.js`로 변경하고 Output Directory 자동 감지를 사용했다.
+- 두 번째 원인: Production 환경에 `NEXT_PUBLIC_SUPABASE_URL`과 `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`가 없어 런타임 요청이 Zod 검증에서 HTTP 500으로 실패했다.
+- 수정: 위 두 공개용 설정만 Vercel Production Config 환경변수로 등록했다. 값과 관리용 비밀키는 MD나 Git에 기록하지 않는다.
+- 성공 배포 ID: `Ba49WFss6kS4MUXKk8G5D2osVRx9`
+- 최종 검증: 배포 상태 `Ready`, 운영 주소 `https://svcdept.vercel.app` HTTP 200, 최종 경로 `/login`.
+- 현재 두 환경변수는 Production 범위에만 등록했다. 향후 Preview 배포를 사용할 때는 Preview 범위에도 별도로 등록한다.

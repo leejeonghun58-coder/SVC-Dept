@@ -369,3 +369,17 @@ exports/
 - 원본 Excel/CSV와 `.env*`는 `.gitignore`로 제외하며 GitHub에 올리지 않는다.
 - 공개 저장소에는 합성 fixture와 코드·설계 문서만 포함하고 실제 고객 식별정보와 비밀키를 기록하지 않는다.
 - 연결 직전 검증: Vitest 36개, Python `unittest` 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.
+
+### Vercel 배포 복구 기록
+
+- 복구일: 2026-09-29
+- Vercel 프로젝트: `fuji-ai1/svcdept`
+- 운영 주소: `https://svcdept.vercel.app`
+- 초기 실패 원인은 Framework Preset `Other`가 존재하지 않는 `public` 출력 폴더를 기대한 설정 오류였다.
+- Framework Preset을 `Next.js`로 변경해 빌드 및 출력 감지를 정상화했다.
+- 첫 재배포는 성공했지만 Production 환경변수 누락으로 런타임 HTTP 500이 발생했다.
+- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` 두 공개용 Config 값만 Production에 등록했다.
+- Supabase `service_role` 키, DB 비밀번호와 기타 관리용 비밀키는 Vercel 브라우저 설정이나 Git에 추가하지 않았다.
+- 성공 배포 ID: `Ba49WFss6kS4MUXKk8G5D2osVRx9`, 상태 `Ready`, 빌드 시간 49초.
+- 외부 HTTP 검증 결과: 200 응답 후 `/login`으로 정상 이동했다.
+- Preview 배포가 필요하면 동일한 공개용 두 값을 Preview 범위에도 별도로 추가해야 한다.
