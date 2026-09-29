@@ -191,3 +191,184 @@ h1 {
   color: #5f716e;
   background: #f8fbfa;
 }
+
+.data-management {
+  display: grid;
+  gap: 28px;
+}
+
+.page-heading h1,
+.upload-card h2,
+.job-card h2 {
+  margin: 0;
+}
+
+.page-heading p:not(.eyebrow) {
+  color: #5f716e;
+  margin: 8px 0 0;
+}
+
+.upload-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.upload-card,
+.job-card {
+  background: #fff;
+  border: 1px solid #d8e2df;
+  border-radius: 18px;
+  box-shadow: 0 12px 34px rgb(16 35 63 / 7%);
+  padding: 26px;
+}
+
+.upload-form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(280px, 1.4fr) auto;
+  margin-top: 24px;
+}
+
+.upload-form label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  grid-row: 1;
+}
+
+.upload-form select,
+.upload-form input[type="file"] {
+  background: #fff;
+  border: 1px solid #cbd8d4;
+  border-radius: 10px;
+  color: #17312d;
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.upload-form button,
+.upload-actions button,
+.secondary-button {
+  align-self: end;
+  background: #1f7162;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  min-height: 44px;
+  padding: 10px 16px;
+}
+
+.upload-form button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.form-help {
+  color: #5f716e;
+  font-size: 0.82rem;
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.selected-file {
+  color: #17312d;
+  font-size: 0.86rem;
+  grid-column: 1 / -1;
+  margin: 2px 0 0;
+}
+
+.upload-progress {
+  background: #f3f7f6;
+  border-radius: 12px;
+  margin-top: 22px;
+  padding: 16px;
+}
+
+.progress-copy,
+.job-card-heading,
+.upload-actions {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-progress progress {
+  accent-color: #1f7162;
+  height: 10px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.upload-actions {
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.secondary-button,
+.upload-actions button {
+  background: #e8f0ee;
+  color: #18584d;
+  min-height: 36px;
+}
+
+.job-table-wrap {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.job-table {
+  border-collapse: collapse;
+  min-width: 720px;
+  width: 100%;
+}
+
+.job-table th,
+.job-table td {
+  border-bottom: 1px solid #d8e2df;
+  padding: 13px 10px;
+  text-align: left;
+}
+
+.job-table th {
+  color: #5f716e;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.status {
+  background: #eef2f1;
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 750;
+  padding: 5px 9px;
+  white-space: nowrap;
+}
+
+.status-active,
+.status-ready_for_review {
+  background: #e1f4ea;
+  color: #14633a;
+}
+
+.status-warning {
+  background: #fff0ce;
+  color: #815900;
+}
+
+.status-failed,
+.status-rolled_back {
+  background: #fde7e7;
+  color: #9b2c2c;
+}
+
+@media (max-width: 900px) {
+  .upload-form {
+    grid-template-columns: 1fr;
+  }
+
+  .upload-form label {
+    grid-row: auto;
+  }
+}

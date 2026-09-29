@@ -347,4 +347,15 @@ exports/
 - 전체 검증: Vitest 16개, Python 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.
 - `.env.local`과 관리 키는 Git에 포함하지 않는다. E2E 관리 키는 실행 프로세스에만 일시 주입한다.
 
-다음 구현 단위: XLSX 직접 재개 가능 업로드와 업로드 작업 생성.
+### Task 5 — XLSX 직접 재개 가능 업로드 완료
+
+- `데이터 관리` 화면에서 출고·DV XLSX를 선택하고 SHA-256 중복 확인 후 업로드할 수 있다.
+- 최대 크기는 200MB이며, 업로드 작업은 사용자별 불변 경로와 `kind + sha256` 유일성으로 중복을 막는다.
+- 파일은 Next.js를 경유하지 않고 Supabase 직접 Storage 호스트에 TUS 6MB 청크로 전송된다.
+- 진행률, 일시정지, 계속, 실패 재시도와 8개 작업 상태의 한국어 표시를 구현했다.
+- 실제 개발 프로젝트에서 첫 PATCH 청크 중단 후 자동 재개해 작업 1건·객체 1개만 생성되는 E2E가 통과했다.
+- 검증 fixture는 모두 삭제했으며 테스트 사용자·작업·객체 잔여 수는 각각 0건이다.
+- 전체 검증: Vitest 29개, Playwright 5개, Python 7개, ESLint, TypeScript, 프로덕션 빌드 통과.
+- 공개 Supabase URL·publishable key만 브라우저 번들에 포함하고 관리 키는 테스트 프로세스에만 일시 주입한다.
+
+다음 구현 단위: XLSX 스트리밍 파서와 출고·DV 검증 규칙.

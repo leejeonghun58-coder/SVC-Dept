@@ -1,8 +1,8 @@
 # Raw and processed business data
-data/
-uploads/
-exports/
-reports/
+/data/
+/uploads/
+/exports/
+/reports/
 *.xlsx
 *.xls
 *.xlsm
