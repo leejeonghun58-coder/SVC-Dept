@@ -325,3 +325,17 @@ exports/
 - 고객명·고객 코드·장비번호의 외부 저장 허용 여부를 먼저 확인
 - 회사 자료를 집 PC로 이동할 수 있는지 사내 규정 확인
 - 현재 타인 계정에 고객 데이터나 비밀키를 업로드하지 않음
+
+## 15. 2026-09-29 구현 현황
+
+- 전체 설계와 3개 구현 계획이 최종 승인되어 구현을 시작했다.
+- Git 브랜치는 `feat/ssda-foundation`이며 기초 앱과 원본 매핑 계약을 각각 커밋했다.
+- 본인 Supabase 계정의 서울 리전 개발 프로젝트 `SSDA Development`에 연결했다.
+- 프로젝트 참조값은 `uttshmnzrfwdsvepsjxo`이며 비밀번호와 API 키는 저장소·MD에 기록하지 않는다.
+- 12개 핵심 테이블, 정확한 numeric 금액 타입, 버전형 원본 행, 집계 테이블, 감사 테이블을 만들었다.
+- 원본 XLSX용 `source-workbooks` 버킷은 비공개이며 활성 앱 회원 기반 Storage RLS를 적용했다.
+- 공개 스키마의 모든 업무 테이블에 RLS를 적용했고, 비회원은 행·업로드 작업·Storage 객체에 접근할 수 없다.
+- 원격 pgTAP 56개, DB lint, Supabase Advisor, 앱 테스트·타입 검사·빌드와 기존 Python 회귀 테스트를 통과했다.
+- Supabase 연결 임시파일 `supabase/.temp/`, 원본 Excel, 환경변수와 비밀키는 Git에서 제외한다.
+
+다음 구현 단위: 초대 전용 Supabase Auth와 보호된 데스크톱 앱 셸.

@@ -968,3 +968,21 @@ PDF 구성 사용자 답변: **B — 요약 + 분석형**
 - 계획 2: `docs/superpowers/plans/2026-09-29-ssda-analytics-ui.md`
 - 계획 3: `docs/superpowers/plans/2026-09-29-ssda-reports-release.md`
 - 현재 상태: 사용자 계획 검토 및 실행 방식 선택 대기
+
+### 구현 착수 및 Supabase 개발 환경 연결
+
+- 착수일: 2026-09-29
+- 구현 브랜치: `feat/ssda-foundation`
+- 기초 앱 커밋: `301c1c3 chore: initialize SSDA web application`
+- 데이터 가져오기 계약 커밋: `d325277 docs: define workbook import contract`
+- Supabase CLI: `2.118.0` 고정 버전
+- 본인 Supabase 계정에 `SSDA Development` 프로젝트를 서울 리전(`ap-northeast-2`)으로 생성했다.
+- 프로젝트 참조값: `uttshmnzrfwdsvepsjxo` — 공개 식별자이며 비밀번호·API 키는 문서와 Git에 기록하지 않는다.
+- 프로젝트 상태: `ACTIVE_HEALTHY`
+- 핵심 스키마 pgTAP 38개와 RLS·비회원 차단 pgTAP 18개가 원격 개발 DB에서 통과했다.
+- DB 린트는 스키마 오류 0개, Security/Performance Advisor는 경고 이상 0개다.
+- 로컬·원격 마이그레이션 `20260929002707`, `20260929002709` 이력이 일치한다.
+- `supabase/.temp/`는 연결 정보가 있으므로 `.gitignore`에 추가해 커밋에서 제외한다.
+- 앱 단위 테스트 12개, Python 회귀 테스트 7개, ESLint, TypeScript 타입 검사와 Next.js 빌드가 통과했다.
+
+현재 상태: **기반·가져오기 계획 Task 3 완료, Task 4 인증·보호 화면 구현 준비**
