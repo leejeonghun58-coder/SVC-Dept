@@ -1,0 +1,33 @@
+:root {
+  color-scheme: light;
+  font-family: "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  background: #f2f7f5;
+  color: #173a35;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 1024px;
+  min-height: 100vh;
+}
+
+.landing {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 96px 48px;
+}
+
+.eyebrow {
+  color: #187b6b;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: 2.25rem;
+}
