@@ -359,3 +359,13 @@ exports/
 - 공개 Supabase URL·publishable key만 브라우저 번들에 포함하고 관리 키는 테스트 프로세스에만 일시 주입한다.
 
 다음 구현 단위: XLSX 스트리밍 파서와 출고·DV 검증 규칙.
+
+### GitHub 원격 저장소
+
+- 연결일: 2026-09-29
+- 저장소: `https://github.com/leejeonghun58-coder/SVC-Dept`
+- 연결 당시 저장소 공개 범위: Public
+- 원격 브랜치 운영: 검증 완료 안정분은 `main`, 진행 중인 기반·가져오기 구현은 `feat/ssda-foundation`
+- 원본 Excel/CSV와 `.env*`는 `.gitignore`로 제외하며 GitHub에 올리지 않는다.
+- 공개 저장소에는 합성 fixture와 코드·설계 문서만 포함하고 실제 고객 식별정보와 비밀키를 기록하지 않는다.
+- 연결 직전 검증: Vitest 36개, Python `unittest` 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.

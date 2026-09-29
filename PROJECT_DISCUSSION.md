@@ -1009,3 +1009,13 @@ PDF 구성 사용자 답변: **B — 요약 + 분석형**
 - 합성 7MB fixture의 두 번째 청크를 한 번 끊은 실제 E2E에서 재개 후 작업 1건·객체 1개만 생성됨을 확인했다.
 - 전체 검증: Vitest 29개, Playwright 5개, Python 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.
 - 모든 원격 E2E fixture를 삭제했고 사용자·작업·객체 잔여 수는 각각 0건이다.
+
+### GitHub 저장소 연결 결정
+
+- 결정일: 2026-09-29
+- 사용자 지정 저장소: `https://github.com/leejeonghun58-coder/SVC-Dept`
+- 저장소 상태 확인 시점에는 비어 있는 공개 저장소였다.
+- 원본 XLSX/CSV, `.env*`, Supabase 임시 연결 정보, 생성 보고서와 로컬 캐시는 Git에 포함하지 않는다.
+- 안정 완료분은 원격 `main`, 후속 구현분은 `feat/ssda-foundation` 브랜치에 보존한다.
+- 저장소가 공개 상태이므로 실제 고객명, 고객번호, 장비번호, 원본 행과 비밀키는 이후에도 커밋하지 않는다.
+- 연결 전 검증: Vitest 36개, Python 회귀 테스트 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.
