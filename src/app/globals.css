@@ -15,6 +15,20 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #e8a126;
+  outline-offset: 3px;
+}
+
 .landing {
   max-width: 960px;
   margin: 0 auto;
@@ -30,4 +44,150 @@ body {
 h1 {
   margin: 12px 0;
   font-size: 2.25rem;
+}
+
+.login-page,
+.access-denied {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 48px;
+}
+
+.login-card {
+  width: min(480px, 100%);
+  padding: 48px;
+  background: #fff;
+  border: 1px solid #d6e3df;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgb(23 58 53 / 10%);
+}
+
+.login-card h1 {
+  font-size: 1.75rem;
+}
+
+.login-description,
+.login-note {
+  color: #5f716e;
+  line-height: 1.6;
+}
+
+.login-form {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 20px;
+}
+
+.login-form label {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.login-form input {
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #a9bbb7;
+  border-radius: 8px;
+}
+
+.login-form button,
+.text-button {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-form button {
+  min-height: 48px;
+  margin-top: 16px;
+  background: #176e61;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form-error {
+  padding: 12px;
+  color: #8f1d1d;
+  background: #fff0f0;
+  border-radius: 8px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px;
+  color: #effaf7;
+  background: #173a35;
+}
+
+.brand {
+  display: grid;
+  gap: 6px;
+  padding: 0 10px 26px;
+}
+
+.brand-mark {
+  color: #72d0bd;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 5px;
+}
+
+.sidebar nav a {
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #e6f1ee;
+  text-decoration: none;
+}
+
+.sidebar nav a:hover {
+  background: #24534b;
+}
+
+.member-panel {
+  display: grid;
+  gap: 5px;
+  margin-top: auto;
+  padding: 16px 10px 0;
+  border-top: 1px solid #3c625c;
+}
+
+.member-panel small {
+  color: #b9cfca;
+}
+
+.text-button {
+  margin-top: 8px;
+  padding: 8px 0;
+  color: #d7ebe6;
+  background: transparent;
+}
+
+.workspace {
+  padding: 56px 64px;
+}
+
+.empty-state {
+  display: grid;
+  gap: 8px;
+  margin-top: 32px;
+  padding: 32px;
+  border: 1px dashed #91aaa4;
+  border-radius: 12px;
+  color: #5f716e;
+  background: #f8fbfa;
 }

@@ -338,4 +338,13 @@ exports/
 - 원격 pgTAP 56개, DB lint, Supabase Advisor, 앱 테스트·타입 검사·빌드와 기존 Python 회귀 테스트를 통과했다.
 - Supabase 연결 임시파일 `supabase/.temp/`, 원본 Excel, 환경변수와 비밀키는 Git에서 제외한다.
 
-다음 구현 단위: 초대 전용 Supabase Auth와 보호된 데스크톱 앱 셸.
+### Task 4 — 초대 전용 인증과 보호 화면 완료
+
+- 이메일·비밀번호 로그인, 로그아웃, 세션 갱신과 보호된 데스크톱 앱 셸을 구현했다.
+- 공개 회원가입은 제공하지 않으며, 서버 검증 사용자와 활성 `app_members` 행이 모두 있어야 업무 화면에 접근할 수 있다.
+- Next.js 16.3.6 규약에 따라 `src/proxy.ts`를 사용한다.
+- 실제 개발 Supabase에서 로그아웃 리디렉션, 미등록 사용자 차단, 활성 회원 접속, 비밀키 브라우저 미노출 E2E 4개가 통과했다.
+- 전체 검증: Vitest 16개, Python 7개, ESLint, TypeScript, Next.js 프로덕션 빌드 통과.
+- `.env.local`과 관리 키는 Git에 포함하지 않는다. E2E 관리 키는 실행 프로세스에만 일시 주입한다.
+
+다음 구현 단위: XLSX 직접 재개 가능 업로드와 업로드 작업 생성.
