@@ -383,3 +383,11 @@ exports/
 - 성공 배포 ID: `Ba49WFss6kS4MUXKk8G5D2osVRx9`, 상태 `Ready`, 빌드 시간 49초.
 - 외부 HTTP 검증 결과: 200 응답 후 `/login`으로 정상 이동했다.
 - Preview 배포가 필요하면 동일한 공개용 두 값을 Preview 범위에도 별도로 추가해야 한다.
+
+### 초기 관리자 접근 설정
+
+- 설정일: 2026-09-29
+- Supabase Auth 초기 사용자를 이메일 확인 완료 상태로 생성하고, `app_members`에 `admin` 및 활성 상태로 등록했다.
+- 배포 앱에서 로그인 후 `/dashboard`의 보호 화면과 5개 주요 메뉴 접근을 확인했다.
+- 사용자 이메일과 비밀번호는 인증정보이므로 이 문서, Git과 로그에 남기지 않는다.
+- 새 사용자는 Auth 생성만으로 접근할 수 없다. `app_members`에 `user_id`, 이메일, 표시명, 역할(`admin`/`operator`/`viewer`), `is_active=true`를 등록해야 한다.
