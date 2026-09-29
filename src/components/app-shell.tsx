@@ -30,8 +30,8 @@ export function AppShell({
     <div className="app-shell">
       <aside className="sidebar">
         <div className="brand">
-          <span className="brand-mark">SSDA</span>
-          <strong>서비스 자재 분석</strong>
+          <span className="brand-mark">SVC</span>
+          <strong>SVC 고객별 자재출고·DV 분석</strong>
         </div>
         <nav aria-label="주요 메뉴">
           {navigation.map((item) => (

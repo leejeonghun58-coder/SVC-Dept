@@ -32,10 +32,10 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
   return (
     <main className="login-page">
       <section className="login-card" aria-labelledby="login-title">
-        <p className="eyebrow">SSDA</p>
-        <h1 id="login-title">서비스 자재 출고·DV 통합분석 시스템</h1>
+        <p className="eyebrow">SVC</p>
+        <h1 id="login-title">SVC 고객별 자재출고·DV 분석</h1>
         <p className="login-description">
-          회사에서 초대한 계정으로 로그인해 주세요.
+          월도별 자재 출고와 고객 사용량(DV)을 분석합니다.
         </p>
         {message ? <p className="form-error" role="alert">{message}</p> : null}
         <form action={signIn} className="login-form">
