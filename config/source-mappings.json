@@ -1,0 +1,42 @@
+{
+  "shipment": {
+    "kind": "shipment",
+    "currency": { "mode": "implicit", "value": "KRW" },
+    "allowedCurrencies": ["KRW"],
+    "fields": {
+      "billingMonth": { "aliases": ["월도"], "required": true, "approvalRequired": false },
+      "customerNo": { "aliases": ["Customer No"], "required": true, "approvalRequired": false },
+      "customerName": { "aliases": ["Customer Name"], "required": true, "approvalRequired": false },
+      "itemNumber": { "aliases": ["Charge Detail Item Number"], "required": true, "approvalRequired": false },
+      "itemDescription": { "aliases": ["Charge Detail Item Description"], "required": false, "approvalRequired": false },
+      "quantity": { "aliases": ["Qty"], "required": true, "approvalRequired": false },
+      "unitCost": { "aliases": ["Item/Material Cost"], "required": false, "approvalRequired": true },
+      "unitPrice": { "aliases": ["Overide Unit Price"], "required": false, "approvalRequired": true },
+      "exactAmount": { "aliases": ["Extended Price"], "required": false, "approvalRequired": true },
+      "totalCost": { "aliases": ["Total Cost"], "required": false, "approvalRequired": true },
+      "category": { "aliases": ["Charge Detail Product Category1"], "required": false, "approvalRequired": true },
+      "subCategory": { "aliases": ["CONS_SUB_CATEGORY"], "required": false, "approvalRequired": true },
+      "svcTeam": { "aliases": ["New CSE Group-1"], "required": false, "approvalRequired": true },
+      "model": { "aliases": ["GL Product Level 6"], "required": false, "approvalRequired": true },
+      "channel": { "aliases": ["직판/ 위탁 구분"], "required": false, "approvalRequired": false }
+    }
+  },
+  "dv": {
+    "kind": "dv",
+    "currency": { "mode": "column", "value": "KRW", "header": "currency" },
+    "allowedCurrencies": ["KRW"],
+    "fields": {
+      "billingMonth": { "aliases": ["Billing Period"], "required": true, "approvalRequired": false },
+      "customerNo": { "aliases": ["Customer No", "CustomerNo"], "required": true, "approvalRequired": false },
+      "customerName": { "aliases": ["Customer Name", "CustomerName"], "required": true, "approvalRequired": false },
+      "itemNumber": { "aliases": ["Part No.", "PartNo."], "required": true, "approvalRequired": false },
+      "serialNo": { "aliases": ["Serial No", "SerialNo"], "required": false, "approvalRequired": false },
+      "totalDv": { "aliases": ["Total DV", "합계 : Total DV"], "required": true, "approvalRequired": false },
+      "totalRevenue": { "aliases": ["TOTAL REV", "합계 : TOTAL REV"], "required": false, "approvalRequired": true },
+      "currency": { "aliases": ["Currency"], "required": false, "approvalRequired": false },
+      "svcTeam": { "aliases": ["New 서비스 팀- 20년 6월 19일기준-2", "서비스 팀"], "required": false, "approvalRequired": true },
+      "model": { "aliases": ["PL6 변경"], "required": false, "approvalRequired": true },
+      "channel": { "aliases": ["직판/위탁 구분"], "required": false, "approvalRequired": true }
+    }
+  }
+}

@@ -212,3 +212,9 @@
 - 중복 분석기: `tools/analyze_dv_duplicates.py`
 - 성능 회귀 테스트: `tests/test_profile_workbooks.py`
 - 중복 규칙 테스트: `tests/test_analyze_dv_duplicates.py`
+
+## 11. 앱 가져오기 계약 반영
+
+2026-09-29 기준 `Billing Period`, 고객번호·고객명 변형, 품목번호 변형, `Total DV` 변형을 `config/source-mappings.json`에 명시했다. 고객 자동 연결은 Customer No와 Customer Name이 모두 일치할 때만 수행한다. 과거와 현재의 서비스 조직 열은 기준이 다를 가능성이 있어 SVC팀 공식 추세로 사용하기 전에 승인이 필요하다.
+
+음수 DV와 장비·월도 충돌 행은 삭제하거나 임의 대표값으로 치환하지 않는다. 최신 파일에 `Currency` 열이 없으므로 KRW 확인 전에는 해당 버전을 활성화하지 않는다. 세부 정책과 승인 필요 필드는 `docs/data-import-policy.md`를 따른다.
